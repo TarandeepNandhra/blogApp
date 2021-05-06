@@ -21,3 +21,8 @@
   - Can be complicated to setup - has a bunch of special terms
 - Context has a Provider, makes info available to children
 - React has useContext
+
+- Use Reducer over State to refactor
+  - Reducer uses a switch statement for different cases
+  - Makes sense for the different CRUD operations
+  - type can define each CRUD operation
