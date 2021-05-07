@@ -34,3 +34,7 @@
 - Can use .find(() => {}) to get data with particular id
 
 - Screen.navigationOptions function with headerRight to put icon on top of app
+
+- Refactor when screens are similar.
+
+- defaultProps if props is undef.
