@@ -36,5 +36,6 @@
 - Screen.navigationOptions function with headerRight to put icon on top of app
 
 - Refactor when screens are similar.
+- defaultProps if props is not given.
 
-- defaultProps if props is undef.
+- navigation.pop() -> go to prev screen
