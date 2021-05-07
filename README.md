@@ -26,3 +26,11 @@
   - Reducer uses a switch statement for different cases
   - Makes sense for the different CRUD operations
   - type can define each CRUD operation
+
+- To navigate between screens, use the navigation props which is passed via props
+  - navigation.navigate("ScreenName"), inside of an onPress.
+  - navigation.getParam('id') equivalent to navigation.state.params.id
+
+- Can use .find(() => {}) to get data with particular id
+
+- Screen.navigationOptions function with headerRight to put icon on top of app
