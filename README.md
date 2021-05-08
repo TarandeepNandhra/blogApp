@@ -49,3 +49,11 @@ navigation.addListener('didFocus', () => {
 });
 ```
 - creates a listener, which requires cleanup
+
+(170)
+- Don't have to make a createDataContext component - but it's good for keeping code DRY:
+  - Apps will have different resources which each require a context
+  - Just have to make a new reducer, functions which use dispatch and pass functions to createDataContext, which returns a Context and Provider object.
+  - Provider is wrapped around the App tag in App.js, do for each Provider 
+  - Context is used in any screen which requires that info 
+  - If importing multiple Providers or Contexts ----> Provider as CommentsProvider
