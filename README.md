@@ -39,3 +39,13 @@
 - defaultProps if props is not given.
 
 - navigation.pop() -> go to prev screen
+
+How to persist state so restarting app does not wipe data -> JSON API Server
+
+- Refetching on navigation (if using useEffect then won't rerender)
+```
+navigation.addListener('didFocus', () => {
+  getBlogPosts();
+});
+```
+- creates a listener, which requires cleanup
